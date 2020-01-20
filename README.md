@@ -5,11 +5,11 @@ The data used in our manuscript can be found at [NCBI SRA](https://www.ncbi.nlm.
 ## Code
 ### Stardard code
 * Bowtie2: Version 2.2.9
-2. bedtools: Version 2.25.0
-3. STAR: Version 2.4.2a
-4. HTSeq: Version 0.6.1
-5. edgeR:  Version 3.12.1
-6. MEME: Version 4.12.0
+* bedtools: Version 2.25.0
+* STAR: Version 2.4.2a
+* HTSeq: Version 0.6.1
+* edgeR:  Version 3.12.1
+* MEME: Version 4.12.0
 
 ### Customized code
 
