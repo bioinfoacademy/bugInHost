@@ -12,6 +12,8 @@ The data used in our manuscript can be found at [NCBI SRA](https://www.ncbi.nlm.
 * MEME: Version 4.12.0
 
 ### Customized code
+* R script for evaluating RNA-seq data
 
+* R script for making plots
 
 
