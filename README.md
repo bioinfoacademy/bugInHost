@@ -1,5 +1,17 @@
 # bugInHost
-The data used in our manuscript can be found at [NCBI SRA](https://www.ncbi.nlm.nih.gov/Traces/study/?query_key=2&WebEnv=NCID_1_121817164_130.14.18.97_5555_1579536043_3413626408_0MetA0_S_HStore&o=acc_s%3Aa) 
+## Data
+The data used in our manuscript can be found at [NCBI SRA](https://www.ncbi.nlm.nih.gov/Traces/study/?query_key=2&WebEnv=NCID_1_121817164_130.14.18.97_5555_1579536043_3413626408_0MetA0_S_HStore&o=acc_s%3Aa).
+
+## Code
+### Stardard code
+1. Bowtie2: Version 2.2.9
+2. bedtools: Version 2.25.0
+3. STAR: Version 2.4.2a
+4. HTSeq: Version 0.6.1
+5. edgeR:  Version 3.12.1
+6. MEME: Version 4.12.0
+
+### Customized code
 
 
 
