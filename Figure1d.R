@@ -1,12 +1,12 @@
 library(tidyverse)
 
 # get the raw read count table
-readCount_df <- read.csv("~/Google Drive/bugInHost.Mazmanian/docs/manuscript/revisions_bug_in_host/files_from_wenchi/FullList_RawReadCounts_EachMouseSite.csv", row.names = 1)
+readCount_df <- read.csv("~/PATH/FullList_RawReadCounts_EachMouseSite.csv", row.names = 1)
 readCount_df
 head(readCount_df)
 
 # get the gene length of each locustag
-latestLocusTag<-read.csv("~/Google Drive/bugInHost.Mazmanian/data/reference/GCF_000025985.1_ASM2598v1_genomic.gff.locusTag", header=F, sep="\t")
+latestLocusTag<-read.csv("~/PATH/GCF_000025985.1_ASM2598v1_genomic.gff.locusTag", header=F, sep="\t")
 head(latestLocusTag)
 getLengthLocusTag <- data.frame(do.call("rbind",strsplit(as.character(latestLocusTag$V1),"-")))
 getLengthLocusTag$locusTag <- latestLocusTag$V2
