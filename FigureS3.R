@@ -32,8 +32,8 @@ my_fn <- function(data, mapping, method="p", use="pairwise", ...){
 }
 
 
-files_counts <- sort(list.files(path="~/Google Drive/bugInHost.Mazmanian/results/032216_V3data/host040616/", pattern="BF.*.counts"))
-files_coverage <- sort(list.files(path="~/Google Drive/bugInHost.Mazmanian/results/032216_V3data/host040616/", pattern="BF.*.coverage"))
+files_counts <- sort(list.files(path="~/PATH/", pattern="BF.*.counts"))
+files_coverage <- sort(list.files(path="~/PATH/", pattern="BF.*.coverage"))
 
 metadata <- tibble(sampleID = colnames(readCountTable_all), mouseID = rep(c(1:3), each=6), site = rep(c("lumen","mucus","tissue"), each=2, times=3), enrichment = rep(c("nonHS","HS"),times=9))
 
@@ -54,10 +54,10 @@ mm10_gene$geneLength <- mm10_gene$end - mm10_gene$start
 
 readCoverageTable_all <- tibble()
 i=1
-readCoverageTable_one <- read_tsv(paste0("~/Google Drive/bugInHost.Mazmanian/results/032216_V3data/host040616/",files_coverage[i]), col_names = F)
+readCoverageTable_one <- read_tsv(paste0("~/PATH/",files_coverage[i]), col_names = F)
 readCoverageTable_all <- readCoverageTable_one[,8]
 for(i in 2:length(files_coverage)){
-  readCoverageTable_one <- read_tsv(paste0("~/Google Drive/bugInHost.Mazmanian/results/032216_V3data/host040616/",files_coverage[i]), col_names = F)
+  readCoverageTable_one <- read_tsv(paste0("~/PATH/",files_coverage[i]), col_names = F)
   readCoverageTable_all <- bind_cols(readCoverageTable_all, readCoverageTable_one[,8])
 }
 colnames(readCoverageTable_all) <- sub("\\.host.*$","",files_coverage)
@@ -66,10 +66,10 @@ readCoverageTable_name_length <- readCoverageTable_one[,c(4,7)]
 
 readCountTable_all <- tibble()
 i=1
-readCountTable_one <- read_tsv(paste0("~/Google Drive/bugInHost.Mazmanian/results/032216_V3data/host040616/",files_counts[i]), col_names = F)
+readCountTable_one <- read_tsv(paste0("~/PATH/",files_counts[i]), col_names = F)
 readCountTable_all <- readCountTable_one[,2]
 for(i in 2:length(files_counts)){
-  readCountTable_one <- read_tsv(paste0("~/Google Drive/bugInHost.Mazmanian/results/032216_V3data/host040616/",files_counts[i]), col_names = F)
+  readCountTable_one <- read_tsv(paste0("~/PATH/",files_counts[i]), col_names = F)
   readCountTable_all <- bind_cols(readCountTable_all, readCountTable_one[,2])
 }
 colnames(readCountTable_all) <- gsub("\\.host.*$","",files_counts)
