@@ -1,6 +1,6 @@
 library(tidyverse)
 
-coverageFiles <- grep("BF.*psorted.coverage$", list.files("~/Google Drive/bugInHost.Mazmanian/results/032216_V3data/bug/", full.names=T),value=T)
+coverageFiles <- grep("BF.*psorted.coverage$", list.files("~/PATH/", full.names=T),value=T)
 #length(coverageFiles)
 coverageListALL=NULL
 for(i in 1:length(coverageFiles)){
