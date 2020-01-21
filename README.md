@@ -10,6 +10,7 @@ The data used in our manuscript can be found at [NCBI SRA](https://www.ncbi.nlm.
 * HTSeq: Version 0.6.1
 * edgeR:  Version 3.12.1
 * MEME: Version 4.12.0
+* Circos: Version 0.69-9
 
 ### Customized code
 * R script for evaluating RNA-seq data
