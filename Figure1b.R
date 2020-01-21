@@ -1,6 +1,6 @@
 library(tidyverse)
 
-mappingResult <- read_csv("~/Google Drive/bugInHost.Mazmanian/results/032216_V3data/overallMappingBugHostUnaligned.csv", col_names=F)
+mappingResult <- read_csv("~/PATH/overallMappingBugHostUnaligned.csv", col_names=F)
 head(mappingResult)
 colnames(mappingResult)=c("sample","alignedToBug","alignedToHost","unaligned")
 
