@@ -13,8 +13,6 @@ The data used in our manuscript can be found at [NCBI SRA](https://www.ncbi.nlm.
 * Circos: Version 0.69-9
 
 ### Customized code
-* R script for evaluating RNA-seq data
-
-* R script for making plots
+* R script for making plots in the manuscript. Please see the R script files.
 
 
